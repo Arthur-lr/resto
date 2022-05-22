@@ -1,6 +1,7 @@
 package com.example.resto;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -35,6 +36,18 @@ public class AfficheUnRestaurantActivity extends Activity {
 
         Button btnSupprimerUnClient = findViewById(R.id.btnSupprimerUnClient);
         Button btnQuitter = findViewById(R.id.btnQuitterAfficheUnClient);
+
+        Button btnreserver = findViewById(R.id.btnreserverresto);
+        //      Button btnListeReservation = findViewById(R.id.btnListeRservation);
+
+
+        View.OnClickListener ecouteurNewRestaurant = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(AfficheUnRestaurantActivity.this, NewReservationActivity.class));
+            }
+        };
+        btnreserver.setOnClickListener(ecouteurNewRestaurant);
 
         View.OnClickListener ecouteur = new View.OnClickListener() {
             //on implémente la méthode onclick
