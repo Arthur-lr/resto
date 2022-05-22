@@ -27,7 +27,7 @@ public class ListRestaurantsActivity extends Activity {
         Toast.makeText(getApplicationContext(), "il y a " +
                         String.valueOf(c.getCount()) + " clients dans la table",
                 Toast.LENGTH_LONG).show();
-        String[] columns = new String[]{COL_NOM, COL_ADRESSE};
+        String[] columns = new String[]{COL_NOMRESTO, COL_ADRESSE};
 
         int[] to = new int[]{R.id.textViewNomResto, R.id.textViewAdresse};
 

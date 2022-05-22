@@ -19,6 +19,7 @@
         <activity android:name=".AfficheUnRestaurantActivity"/>
         <activity android:name=".ListRestaurantsActivity"/>
         <activity android:name=".NewRestaurantActivity"/>
+        <activity android:name=".NewReservationActivity"/>
     </application>
 
 </manifest>

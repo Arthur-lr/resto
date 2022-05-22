@@ -17,7 +17,7 @@ public class DAORestaurant extends DAOModele {
 //Création d'un ContentValues (fonctionne comme une HashMap)
         ContentValues values = new ContentValues();
 //on lui ajoute une valeur associé à une clé (qui est le nom de la colonne où on veut mettre la valeur)
-        values.put(COL_NOM, unRestaurant.getNom());
+        values.put(COL_NOMRESTO, unRestaurant.getNom());
         values.put(COL_ADRESSE, unRestaurant.getAdresse());
         values.put(COL_STYLE, unRestaurant.getStyle());
         values.put(COL_HORAIRE, unRestaurant.getHoraire());
@@ -34,7 +34,7 @@ public class DAORestaurant extends DAOModele {
     public Restaurant getRestaurantWithId(long id) {
 
         Cursor c = db.query(TABLE_RESTO, new String[]{COL_IDRESTO,
-                        COL_NOM, COL_ADRESSE, COL_HORAIRE, COL_STYLE,COL_TEL}, COL_IDRESTO + " =\"" +
+                        COL_NOMRESTO, COL_ADRESSE, COL_HORAIRE, COL_STYLE,COL_TEL}, COL_IDRESTO + " =\"" +
                 id + "\"", null, null, null, null);
         return cursorToRestaurant(c);
     }

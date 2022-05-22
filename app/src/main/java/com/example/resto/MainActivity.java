@@ -16,24 +16,45 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnNewRestaurant = findViewById(R.id.btnNvRestaurant);
         Button btnListeRestaurant = findViewById(R.id.btnlisteresto);
+        Button btnNewReservation = findViewById(R.id.btnreserver);
+  //      Button btnListeReservation = findViewById(R.id.btnListeRservation);
 
 
-        View.OnClickListener ecouteurNewClient = new View.OnClickListener() {
+        View.OnClickListener ecouteurNewRestaurant = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, NewRestaurantActivity.class));
             }
         };
-        btnNewRestaurant.setOnClickListener(ecouteurNewClient);
+        btnNewRestaurant.setOnClickListener(ecouteurNewRestaurant);
 
-        View.OnClickListener ecouteurNewReleve = new View.OnClickListener() {
+
+        View.OnClickListener ecouteurListRestaurants = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ListRestaurantsActivity.class));
             }
         };
-        btnListeRestaurant.setOnClickListener(ecouteurNewReleve);
+        btnListeRestaurant.setOnClickListener(ecouteurListRestaurants);
 
 
+        View.OnClickListener ecouteurNewReservation = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, NewReservationActivity.class));
+            }
+        };
+        btnNewReservation.setOnClickListener(ecouteurNewReservation);
+
+/*
+        View.OnClickListener ecouteurListReservation = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ListRestaurantsActivity.class));
+            }
+        };
+        btnListeReservation.setOnClickListener(ecouteurListReservation);
     }
+    */
+}
 }
