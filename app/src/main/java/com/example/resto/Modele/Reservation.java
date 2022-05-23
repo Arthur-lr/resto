@@ -8,7 +8,7 @@ public class Reservation {
         protected String horaire;
         protected String nbpersonnes;
 
-    public Reservation(String nom, String nomresa, String horaire, String nbpersonnes) {
+    public Reservation(String nom, String nomresa, String nbpersonnes, String horaire) {
         this.nomrestau = nom;
         this.nomresa = nomresa;
         this.horaire = horaire;

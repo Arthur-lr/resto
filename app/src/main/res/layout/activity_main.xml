@@ -52,16 +52,7 @@
             android:paddingLeft="20dp"
             android:text="Liste des restaurants" />
 
-        <Button
-            android:id="@+id/btnreserver"
-            style="@style/stylebouton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:padding="10dp"
-            android:text="Reserver" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -74,6 +65,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Button
+            android:id="@+id/btnreserver"
+            style="@style/stylebouton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Reserver" />
+<!--
         <Button
             android:id="@+id/btnNvRestaurant"
             style="@style/stylebouton"
@@ -97,6 +99,7 @@
             android:padding="10dp"
             android:paddingRight="20dp"
             android:text="Mes réservations" />
+            -->
     </LinearLayout>
 
 

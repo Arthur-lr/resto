@@ -47,7 +47,7 @@
         tools:layout_editor_absoluteX="6dp" />
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/editTextadresse"
         android:layout_width="407dp"
         android:layout_height="45dp"
         android:layout_marginTop="232dp"

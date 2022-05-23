@@ -14,19 +14,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnNewRestaurant = findViewById(R.id.btnNvRestaurant);
+      //  Button btnNewRestaurant = findViewById(R.id.btnNvRestaurant);
         Button btnListeRestaurant = findViewById(R.id.btnlisteresto);
         Button btnNewReservation = findViewById(R.id.btnreserver);
   //      Button btnListeReservation = findViewById(R.id.btnListeRservation);
 
 
-        View.OnClickListener ecouteurNewRestaurant = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, NewRestaurantActivity.class));
-            }
-        };
-        btnNewRestaurant.setOnClickListener(ecouteurNewRestaurant);
+  //      View.OnClickListener ecouteurNewRestaurant = new View.OnClickListener() {
+    //        @Override
+      //      public void onClick(View v) {
+        //        startActivity(new Intent(MainActivity.this, NewRestaurantActivity.class));
+          //  }
+    //    };
+     //   btnNewRestaurant.setOnClickListener(ecouteurNewRestaurant);
 
 
         View.OnClickListener ecouteurListRestaurants = new View.OnClickListener() {

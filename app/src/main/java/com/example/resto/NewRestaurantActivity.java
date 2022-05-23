@@ -29,9 +29,9 @@ public class NewRestaurantActivity extends Activity {
         //récupération des données saisies
         final EditText nom = findViewById(R.id.editTextPersonName);
 
-        final EditText adresse = findViewById(R.id.editTextStyle);
+        final EditText adresse = findViewById(R.id.editTextadresse);
 
-        final EditText style = findViewById(R.id.editTextHoraire);
+        final EditText style = findViewById(R.id.editTextStyle);
 
         final EditText horaire = findViewById(R.id.editTextHoraire);
 
@@ -44,12 +44,12 @@ public class NewRestaurantActivity extends Activity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.btnEnregistrerRestaurant:
-                        Toast.makeText(getApplicationContext(), "enregistrement du nouveau client !", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "enregistrement du nouveau restaurant !", Toast.LENGTH_LONG).show();
                         Restaurant unrestaurant = new Restaurant(nom.getText().toString(), adresse.getText().toString(), style.getText().toString(), horaire.getText().toString(), tel.getText().toString());
                         RestaurantBdd.insererRestaurant(unrestaurant);
                         //le curseur pour afficher le nombre de clients dans la base
                         Cursor c = RestaurantBdd.getDataRestaurant();
-                        Toast.makeText(getApplicationContext(), " il y a " + String.valueOf(c.getCount()) + " clients ", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), " il y a " + String.valueOf(c.getCount()) + " restaurant ", Toast.LENGTH_LONG).show();
                         RestaurantBdd.close();
                         finish();
                         break;

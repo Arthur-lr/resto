@@ -42,12 +42,12 @@ public class NewReservationActivity extends Activity {
             public void onClick(View v) {
                 switch (v.getId()) {
                     case R.id.btnEnregistrerReservation:
-                        Toast.makeText(getApplicationContext(), "enregistrement du nouveau client !", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "enregistrement d'une nouvelle réservation !", Toast.LENGTH_LONG).show();
                         Reservation unReservation = new Reservation(nomresto.getText().toString(), nomresa.getText().toString(), nbpers.getText().toString(), horaire.getText().toString());
                         ReservationBdd.insererReservation(unReservation);
                         //le curseur pour afficher le nombre de clients dans la base
                         Cursor c = ReservationBdd.getDataReservation();
-                        Toast.makeText(getApplicationContext(), " il y a " + String.valueOf(c.getCount()) + " clients ", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), " il y a " + String.valueOf(c.getCount()) + " réservations ", Toast.LENGTH_LONG).show();
                         ReservationBdd.close();
                         finish();
                         break;

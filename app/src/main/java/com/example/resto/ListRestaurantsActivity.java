@@ -25,7 +25,7 @@ public class ListRestaurantsActivity extends Activity {
         clientBdd.open();
         Cursor c = clientBdd.getDataRestaurant();
         Toast.makeText(getApplicationContext(), "il y a " +
-                        String.valueOf(c.getCount()) + " clients dans la table",
+                        String.valueOf(c.getCount()) + " restaurants dans la table",
                 Toast.LENGTH_LONG).show();
         String[] columns = new String[]{COL_NOMRESTO, COL_ADRESSE};
 
